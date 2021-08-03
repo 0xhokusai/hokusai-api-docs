@@ -103,6 +103,12 @@ dist
 # TernJS port file
 .tern-port
 
+# generated files
+.docusaurus
+.cache-loader
+
+# misc
 .DS_Store
 
-.docusaurus
+# production
+/build
