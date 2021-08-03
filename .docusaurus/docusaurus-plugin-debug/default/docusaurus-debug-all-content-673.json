@@ -310,7 +310,7 @@
           "id": "welcome",
           "metadata": {
             "permalink": "/blog/welcome",
-            "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/blog/blog/2019-05-30-welcome.md",
+            "editUrl": "https://github.com/0xhokusai/blog/2019-05-30-welcome.md",
             "source": "@site/blog/2019-05-30-welcome.md",
             "title": "Welcome",
             "description": "Blog features are powered by the blog plugin. Simply add files to the blog directory. It supports tags as well!",
@@ -342,7 +342,7 @@
           "id": "hello-world",
           "metadata": {
             "permalink": "/blog/hello-world",
-            "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/blog/blog/2019-05-29-hello-world.md",
+            "editUrl": "https://github.com/0xhokusai/blog/2019-05-29-hello-world.md",
             "source": "@site/blog/2019-05-29-hello-world.md",
             "title": "Hello",
             "description": "Welcome to this blog. This blog is created with Docusaurus 2.",
@@ -374,7 +374,7 @@
           "id": "hola",
           "metadata": {
             "permalink": "/blog/hola",
-            "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/blog/blog/2019-05-28-hola.md",
+            "editUrl": "https://github.com/0xhokusai/blog/2019-05-28-hola.md",
             "source": "@site/blog/2019-05-28-hola.md",
             "title": "Hola",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",

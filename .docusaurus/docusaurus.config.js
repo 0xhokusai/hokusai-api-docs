@@ -1,16 +1,16 @@
 export default {
-  "title": "Hokusai API Documents",
-  "tagline": "Dinosaurs are cool",
+  "title": "Hokusai API refrence",
+  "tagline": "The world’s most powerful and easy-to-use NFT APIs",
   "url": "https://your-docusaurus-test-site.com",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
-  "organizationName": "facebook",
+  "organizationName": "JapanMonobundle Inc.",
   "projectName": "Hokusai API Documents",
   "themeConfig": {
     "navbar": {
-      "title": "Hokusai API Documents",
+      "title": "Hokusai API refrence",
       "logo": {
         "alt": "My Site Logo",
         "src": "img/logo.svg"
@@ -22,16 +22,6 @@ export default {
           "position": "left",
           "label": "Tutorial",
           "activeSidebarClassName": "navbar__link--active"
-        },
-        {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
-        },
-        {
-          "href": "https://github.com/facebook/docusaurus",
-          "label": "GitHub",
-          "position": "right"
         }
       ],
       "hideOnScroll": false
@@ -53,15 +43,15 @@ export default {
           "items": [
             {
               "label": "Medium",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
+              "href": "https://0xhokusai.medium.com/"
             },
             {
               "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
+              "href": "https://discord.gg/34fmuE25G2"
             },
             {
               "label": "Twitter",
-              "href": "https://twitter.com/docusaurus"
+              "href": "https://twitter.com/0xHokusai"
             }
           ]
         },
@@ -69,17 +59,17 @@ export default {
           "title": "More",
           "items": [
             {
-              "label": "Blog",
-              "to": "/blog"
+              "label": "LP",
+              "href": "https://hokusai.app/"
             },
             {
               "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "href": "https://github.com/0xhokusai"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2021 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2021 JapanMonobundle Inc. Built with Docusaurus."
     },
     "prism": {
       "theme": {
@@ -302,7 +292,7 @@ export default {
         },
         "blog": {
           "showReadingTime": true,
-          "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/blog/"
+          "editUrl": "https://github.com/0xhokusai"
         },
         "theme": {
           "customCss": "/Users/stevekimura/project/hokusai-api-docs/src/css/custom.css"

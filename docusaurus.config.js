@@ -3,18 +3,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Hokusai API Documents',
-  tagline: 'Dinosaurs are cool',
+  title: 'Hokusai API refrence',
+  tagline: 'The world’s most powerful and easy-to-use NFT APIs',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'JapanMonobundle Inc.', // Usually your GitHub org/user name.
   projectName: 'Hokusai API Documents', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Hokusai API Documents',
+      title: 'Hokusai API refrence',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -25,12 +25,6 @@ module.exports = {
           docId: 'intro',
           position: 'left',
           label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
         },
       ],
     },
@@ -51,15 +45,15 @@ module.exports = {
           items: [
             {
               label: 'Medium',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://0xhokusai.medium.com/',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/34fmuE25G2',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/0xHokusai',
             },
           ],
         },
@@ -67,17 +61,17 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'LP',
+              href: 'https://hokusai.app/',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/0xhokusai',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} JapanMonobundle Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -98,7 +92,7 @@ module.exports = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/0xhokusai',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
