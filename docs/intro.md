@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Hokusai API ドキュメントへようこそ！
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Hokusai API ドキュメント へようこそ！Hokusai では REST を利用した API の提供を行っています。このドキュメントは、Hokusai API の仕様について説明しています。
 
 ## Getting Started
 
