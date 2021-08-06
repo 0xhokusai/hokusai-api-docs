@@ -26,6 +26,10 @@ module.exports = {
           position: 'left',
           label: 'Tutorial',
         },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -100,4 +104,18 @@ module.exports = {
       },
     ],
   ],
+  i18n: {
+    defaultLocale: 'ja',
+    locales: ['ja', 'en'],
+    localeConfigs: {
+      ja: {
+        label: '日本語',
+        direction: 'ltr',
+      },
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+    }
+  }
 };
