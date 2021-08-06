@@ -1,0 +1,10 @@
+{
+  "title": {
+    "message": "Hokusai API refrence",
+    "description": "The title in the navbar"
+  },
+  "item.label.Tutorial": {
+    "message": "Tutorial",
+    "description": "Navbar item with label Tutorial"
+  }
+}
