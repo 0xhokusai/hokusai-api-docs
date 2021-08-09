@@ -17,7 +17,7 @@ module.exports = {
       title: 'Hokusai API refrence',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/hokusai.png',
       },
       items: [
         {
@@ -30,6 +30,10 @@ module.exports = {
     },
     footer: {
       style: 'dark',
+      logo: {
+        alt: 'My Site Logo',
+        src: 'img/hokusai.png',
+      },
       links: [
         {
           title: 'Docs',
