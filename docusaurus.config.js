@@ -89,5 +89,21 @@ module.exports = {
         },
       },
     ],
+    [
+      'redocusaurus',
+      {
+        debug: Boolean(process.env.DEBUG || process.env.CI),
+        specs: [
+          {
+            specUrl: 'https://0xhokusai.github.io/swagger-github-pages/swagger.yaml',
+            routePath: '/',
+          },
+        ],
+        theme: {
+          primaryColor: '#1890ff',
+          redocOptions: { hideDownloadButton: false },
+        },
+      },
+    ],
   ],
 };
