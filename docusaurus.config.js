@@ -20,12 +20,6 @@ module.exports = {
         src: 'img/hokusai.png',
       },
       items: [
-        {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Tutorial',
-        },
       ],
     },
     footer: {
@@ -38,10 +32,6 @@ module.exports = {
         {
           title: 'Docs',
           items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
           ],
         },
         {
@@ -90,7 +80,8 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/0xhokusai/hokusai-api-docs/edit/main/website/',
+          routeBasePath: '/',
         },
         blog: {
           showReadingTime: true,
