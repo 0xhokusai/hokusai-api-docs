@@ -16,7 +16,7 @@ module.exports = {
     navbar: {
       title: 'Hokusai API refrence',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Hokusai Logo',
         src: 'img/hokusai.png',
       },
       items: [
@@ -25,7 +25,7 @@ module.exports = {
     footer: {
       style: 'dark',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Hokusai Logo',
         src: 'img/hokusai.png',
       },
       links: [
