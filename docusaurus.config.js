@@ -30,11 +30,6 @@ module.exports = {
       },
       links: [
         {
-          title: 'Docs',
-          items: [
-          ],
-        },
-        {
           title: 'Community',
           items: [
             {
