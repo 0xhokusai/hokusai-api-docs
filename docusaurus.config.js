@@ -21,12 +21,6 @@ module.exports = {
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {
           type: 'localeDropdown',
           position: 'right',
         },

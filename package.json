@@ -10,7 +10,7 @@
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus build && docusaurus serve",
-    "write-translations": "docusaurus write-translations",
+    "write-translations": "docusaurus write-translations --locale en",
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
