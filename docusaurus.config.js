@@ -21,12 +21,6 @@ module.exports = {
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {
           type: 'localeDropdown',
           position: 'right',
         },
@@ -96,26 +90,6 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
-    [
-      'redocusaurus',
-      {
-        debug: Boolean(process.env.DEBUG || process.env.CI),
-        specs: [
-          {
-            specUrl: 'https://0xhokusai.github.io/swagger-github-pages/swagger.yaml',
-            routePath: '/api',
-          },
-          {
-            spec: 'openapi.yaml',
-            routePath: '/api2/',
-          },
-        ],
-        theme: {
-          primaryColor: '#1890ff',
-          redocOptions: { hideDownloadButton: false },
         },
       },
     ],
