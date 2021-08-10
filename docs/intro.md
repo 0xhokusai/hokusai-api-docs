@@ -2,6 +2,7 @@
 id: intro
 title: 導入
 sidebar_position: 1
+slug: /
 ---
 
 # Hokusai API ドキュメントへようこそ！

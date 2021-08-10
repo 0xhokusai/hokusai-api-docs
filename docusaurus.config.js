@@ -16,8 +16,8 @@ module.exports = {
     navbar: {
       title: 'Hokusai API refrence',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Hokusai Logo',
+        src: 'img/hokusai.png',
       },
       items: [
         {
@@ -34,16 +34,11 @@ module.exports = {
     },
     footer: {
       style: 'dark',
+      logo: {
+        alt: 'Hokusai Logo',
+        src: 'img/hokusai.png',
+      },
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
         {
           title: 'Community',
           items: [
@@ -90,7 +85,8 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/0xhokusai/hokusai-api-docs/edit/main/website/',
+          routeBasePath: '/',
         },
         blog: {
           showReadingTime: true,
@@ -100,6 +96,26 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+      },
+    ],
+    [
+      'redocusaurus',
+      {
+        debug: Boolean(process.env.DEBUG || process.env.CI),
+        specs: [
+          {
+            specUrl: 'https://0xhokusai.github.io/swagger-github-pages/swagger.yaml',
+            routePath: '/api',
+          },
+          {
+            spec: 'openapi.yaml',
+            routePath: '/api2/',
+          },
+        ],
+        theme: {
+          primaryColor: '#1890ff',
+          redocOptions: { hideDownloadButton: false },
         },
       },
     ],
