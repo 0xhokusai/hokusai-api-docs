@@ -1,6 +1,6 @@
 ---
 id: mint-nft
-title: NFTの情報を発行する
+title: NFTを発行する
 sidebar_position: 1
 ---
 
