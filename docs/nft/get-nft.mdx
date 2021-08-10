@@ -1,0 +1,61 @@
+---
+id: get-nft
+title: NFTの情報を取得する
+sidebar_position: 1
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# NFTの情報を取得する
+
+`GET /nfts/{contractId}/{tokenId}`
+
+NFTの情報を取得します。
+
+### リクエストパラメータ
+|パラメータ名|値|説明|
+|--|--|--|
+|`contractId`||使用しているコントラクトのアドレスです|
+|`tokenId`||取得したいNFTのアドレスです|
+
+### レスポンス
+|レスポンスコード|説明|レスポンス|
+|--|--|--|
+|200|処理が正常に終了しました|`{"payee": "string",`|
+|||`"commission": 100}`|
+|400|誤ったパラメータが指定されました|Invalid input|
+
+### リクエストの例
+<Tabs
+  defaultValue="curl"
+  values={[
+    { label: 'Curl', value: 'curl', },
+    { label: 'JavaScript', value: 'js', },
+    { label: 'Python', value: 'py', },
+  ]
+}>
+<TabItem value="curl">
+
+```bash
+curl nantokakantoka
+```
+
+</TabItem>
+<TabItem value="js">
+
+```js
+function helloWorld() {
+  console.log('Hello, world!');
+}
+```
+
+</TabItem>
+<TabItem value="py">
+
+```py
+def hello_world():
+  print 'Hello, world!'
+```
+
+</TabItem>
+</Tabs>
