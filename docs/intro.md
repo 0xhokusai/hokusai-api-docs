@@ -9,6 +9,7 @@ slug: /intro
 
 Hokusai API ドキュメント へようこそ！Hokusai では REST を利用した API の提供を行っています。このドキュメントは、Hokusai API の仕様について説明しています。
 
+![Example banner](../assets/hokusai-api-image.png)
 ## Hokusai APIの特徴
 
 ### 1. 独自コントラクトの作成
