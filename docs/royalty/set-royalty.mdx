@@ -13,21 +13,21 @@ import TabItem from '@theme/TabItem';
 NFT のロイヤリティ情報を設定します。
 
 ### リクエストパラメータ
-|パラメータ名|型|値|説明|
-|--|--|--|--|
-|`contractId`|string||使用しているコントラクトのEthereumアドレス|
-|`tokenId`|string||ロイヤリティを設定したいNFTのEthereumアドレス|
+|キー|型|値の例|説明|
+|--|:--:|:--:|--|
+|`contractId`|string|`SJ6NeN6JsU1B0`|Hokusai API から発行された`contractId`|
+|`tokenId`|string|`1`|Hokusai API により NFT を mint した際に発行された`tokenId`|
 
 ### リクエストボディ
-|キー|型|値|説明|
-|--|--|--|--|
-|`receiver`|string||ロイヤリティ受信者のEthereumアドレス|
-|`percentage`|integer||ロイヤリティの割合（0~100%)|
+|キー|型|値の例|説明|
+|--|:--:|:--:|--|
+|`receiver`|string|`0xdbc8cbd0a92ef715801d11d0100a1bffbed1e2d9`|ロイヤリティ受信者のEthereumアドレス|
+|`percentage`|number|`10`|ロイヤリティの割合（0~100%)|
 
 ### レスポンス
-|レスポンス名|型|値|説明|
-|--|--|:--:|--|
-|`txHash`|string||トランザクションのハッシュ値|
+|キー|型|値の例|説明|
+|--|:--:|:--:|--|
+|`txHash`|string|`0x09e35eb7e41cd6d3759e0632d0f74f480b145173d611868371f0996c1a21d85f`|トランザクションのハッシュ値|
 
 ### リクエスト例
 <Tabs
