@@ -1,5 +1,4 @@
 ---
-id: get-nft
 title: NFTの情報を取得する
 sidebar_position: 1
 ---
@@ -8,14 +7,14 @@ import TabItem from '@theme/TabItem';
 
 # NFTの情報を取得する
 
-### `GET /nfts/{contractId}/{tokenId}`
+### `GET /v1/nfts/{contractId}/{tokenId}`
 
 NFTの情報を取得します。
 
 ### リクエストパラメータ
 |キー|型|値の例|説明|
 |--|:--:|:--:|--|
-|`contractId`|string|`SJ6NeN6JsU1B0`|Hokusai API から発行された`contractId`|
+|`contractId`|string|`ADXS6zyen4NctAjH`|Hokusai API から発行された`contractId`|
 |`tokenId`|string|`1`|Hokusai API により NFT を mint した際に発行された`tokenId`|
 
 ### レスポンス
@@ -27,6 +26,7 @@ NFTの情報を取得します。
 ### リクエスト例
 <Tabs
   defaultValue="curl"
+  groupId="programming-language"
   values={[
     { label: 'Curl', value: 'curl', },
     { label: 'JavaScript', value: 'js', },
@@ -36,15 +36,27 @@ NFTの情報を取得します。
 <TabItem value="curl">
 
 ```bash
-curl "https://api.hokusai.app/v1/nfts/SJ6NeN6JsU1B0/1?key=apikey"
+curl "https://api.hokusai.app/v1/nfts/ADXS6zyen4NctAjH/1?key=fKe2rDFUZjSSdXfW"
 ```
 
 </TabItem>
 <TabItem value="js">
 
 ```js
-function helloWorld() {
-  console.log('Hello, world!');
+const base_url = "https://api.hokusai.app"
+
+const get_nft = async (base_url, api_key, contractId, tokenId) => {
+  const path = `/v1/nfts/${contractId}/${tokenId}`
+  const url = new URL(base_url + path);
+
+  const params = {
+    key: api_key
+  };
+
+  url.search = new URLSearchParams(params).toString();
+
+  const res = await fetch(url);
+  return res.json();
 }
 ```
 
@@ -52,8 +64,19 @@ function helloWorld() {
 <TabItem value="py">
 
 ```py
-def hello_world():
-  print 'Hello, world!'
+import requests
+
+base_url = "https://api.hokusai.app"
+
+def get_nft(base_url: str, api_key: str, contractId: str, tokenId: str):
+  path = f"/v1/nfts/{contractId}/{tokenId}"
+
+  params = {
+    "key": api_key
+  }
+
+  res = requests.get(base_url + path, params=params)
+  return res.json()
 ```
 
 </TabItem>
