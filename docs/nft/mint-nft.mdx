@@ -3,30 +3,71 @@ id: mint-nft
 title: NFTを発行する
 sidebar_position: 2
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # NFTを発行する
 
-### POST
-~~~
-nfts/{contractId}/mint 
-~~~
-contractId Target contract ID  
-tokenId TokenID of the NFT to get.
+### `POST /nfts/{contractId}/mint`
 
-### Request body
-~~~
+NFT を [Mint](/glosarry#mint)します。
+
+### リクエストパラメータ
+|パラメータ名|型|値|説明|
+|--|--|--|--|
+|`contractId`|string||使用しているコントラクトのアドレスで|
+
+### リクエストボディ
+|キー|型|値|説明|
+|--|--|--|--|
+|`to`|string||NFTを発行するアドレス|
+|`tokeuUri`|string||NFT metadata のURI|
+
+### レスポンス
+|レスポンス名|型|値|説明|
+|--|--|:--:|--|
+|`txHash`|string||トランザクションのハッシュ値|
+
+### リクエスト例
+<Tabs
+  defaultValue="curl"
+  values={[
+    { label: 'Curl', value: 'curl', },
+    { label: 'JavaScript', value: 'js', },
+    { label: 'Python', value: 'py', },
+  ]
+}>
+<TabItem value="curl">
+
+```bash
+curl nantokakantoka
+```
+
+</TabItem>
+<TabItem value="js">
+
+```js
+function helloWorld() {
+  console.log('Hello, world!');
+}
+```
+
+</TabItem>
+<TabItem value="py">
+
+```py
+def hello_world():
+  print 'Hello, world!'
+```
+
+</TabItem>
+</Tabs>
+
+#### レスポンス
+
+```json
 {
+  "to": "string",
   "tokenUri": "string"
 }
-~~~
-
-### Responses
-200
-~~~
-{
-  "tokenUri": "string"
-}
-~~~
-400  
-Invalid input
-
+```

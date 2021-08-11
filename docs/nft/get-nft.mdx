@@ -8,30 +8,23 @@ import TabItem from '@theme/TabItem';
 
 # NFTの情報を取得する
 
-`GET /nfts/{contractId}/{tokenId}`
+### `GET /nfts/{contractId}/{tokenId}`
 
 NFTの情報を取得します。
 
 ### リクエストパラメータ
-|パラメータ名|値|説明|
-|--|--|--|
-|`contractId`||使用しているコントラクトのアドレスです|
-|`tokenId`||取得したいNFTのアドレスです|
+|パラメータ名|型|値|説明|
+|--|--|--|--|
+|`contractId`|string||使用しているコントラクトのアドレス|
+|`tokenId`|string||取得したいNFTのアドレス|
 
 ### レスポンス
-|レスポンス名|値|説明|
-|--|:--:|--|
-|`payee`|"string"||
-|`commision`|100||
+|レスポンス名|型|値|説明|
+|--|--|:--:|--|
+|`id`|integer|||
+|`tokenUri`|string||メタデータのURI|
 
-```json title="レスポンス例"
-{
-  "payee": "string",
-  "commission": 100
-}
-```
-
-### リクエストの例
+### リクエスト例
 <Tabs
   defaultValue="curl"
   values={[
@@ -65,3 +58,12 @@ def hello_world():
 
 </TabItem>
 </Tabs>
+
+#### レスポンス
+
+```json
+{
+  "id": 1,
+  "tokenUri": "string"
+}
+```

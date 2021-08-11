@@ -1,33 +1,74 @@
 ---
 id: set-royalty
 title: ロイヤリティを設定する
-sidebar_position: 1
+sidebar_position: 2
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # ロイヤリティを設定する
 
-### POST
-~~~
-nfts/{contractId}/tokenId/royalty
-~~~
-contractId Target contract ID  
-tokenId TokenID of the NFT to get.
+### `POST /nfts/{contractId}/{tokenId}/royalty`
 
-### Request body
-~~~
-{
-  "payee": "string",
-  "commission": 100
+NFT のロイヤリティ情報を設定します。
+
+### リクエストパラメータ
+|パラメータ名|型|値|説明|
+|--|--|--|--|
+|`contractId`|string||使用しているコントラクトのEthereumアドレス|
+|`tokenId`|string||ロイヤリティを設定したいNFTのEthereumアドレス|
+
+### リクエストボディ
+|キー|型|値|説明|
+|--|--|--|--|
+|`receiver`|string||ロイヤリティ受信者のEthereumアドレス|
+|`percentage`|integer||ロイヤリティの割合（0~100%)|
+
+### レスポンス
+|レスポンス名|型|値|説明|
+|--|--|:--:|--|
+|`txHash`|string||トランザクションのハッシュ値|
+
+### リクエスト例
+<Tabs
+  defaultValue="curl"
+  values={[
+    { label: 'Curl', value: 'curl', },
+    { label: 'JavaScript', value: 'js', },
+    { label: 'Python', value: 'py', },
+  ]
+}>
+<TabItem value="curl">
+
+```bash
+curl nantokakantoka
+```
+
+</TabItem>
+<TabItem value="js">
+
+```js
+function helloWorld() {
+  console.log('Hello, world!');
 }
-~~~
+```
 
-### Responses
-200
-~~~
+</TabItem>
+<TabItem value="py">
+
+```py
+def hello_world():
+  print 'Hello, world!'
+```
+
+</TabItem>
+</Tabs>
+
+#### レスポンス
+
+```json
 {
-  "txHash": "string"
+  "to": "string",
+  "tokenUri": "string"
 }
-~~~
-400  
-Invalid input
-
+```
