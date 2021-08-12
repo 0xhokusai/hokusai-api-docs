@@ -28,10 +28,6 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      logo: {
-        alt: 'Hokusai Logo',
-        src: 'img/hokusai.png',
-      },
       links: [
         {
           title: 'Community',
