@@ -59,9 +59,9 @@ const mint_nft = async (base_url, api_key, contractId, to, tokenUri) => {
     key: api_key
   };
 
-  const request_body = {
-    to: to,
-    tokenUri: tokenUri
+  const requestBody = {
+    to,
+    tokenUri,
   };
 
   url.search = new URLSearchParams(params).toString();
