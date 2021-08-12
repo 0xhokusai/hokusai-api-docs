@@ -43,14 +43,14 @@ curl "https://api.hokusai.app/v1/nfts/ADXS6zyen4NctAjH/1/royalty?key=fKe2rDFUZjS
 <TabItem value="js">
 
 ```js
-const base_url = "https://api.hokusai.app"
+const baseUrl = "https://api.hokusai.app"
 
-const get_royalty = async (base_url, api_key, contractId, tokenId) => {
+const getRoyalty = async (baseUrl, apiKey, contractId, tokenId) => {
   const path = `/v1/nfts/${contractId}/${tokenId}/royalty`
-  const url = new URL(base_url + path);
+  const url = new URL(baseUrl + path);
 
   const params = {
-    key: api_key
+    key: apiKey
   };
 
   url.search = new URLSearchParams(params).toString();

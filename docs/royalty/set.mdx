@@ -54,19 +54,19 @@ curl -X POST -H "Content-Type: application/json" \
 <TabItem value="js">
 
 ```js
-const base_url = "https://api.hokusai.app"
+const baseUrl = "https://api.hokusai.app"
 
-const mint_nft = async (base_url, api_key, contractId, tokenId, receiver, percentage) => {
+const mintNft = async (baseUrl, apiKey, contractId, tokenId, receiver, percentage) => {
   const path = `/v1/nfts/${contractId}/${tokenId}/royalty`
-  const url = new URL(base_url + path);
+  const url = new URL(baseUrl + path);
 
   const params = {
-    key: api_key
+    key: apiKey
   };
 
-  const request_body = {
-    receiver: receiver,
-    percentage: percentage
+  const requestBody = {
+    receiver,
+    percentage
   };
 
   url.search = new URLSearchParams(params).toString();
@@ -76,7 +76,7 @@ const mint_nft = async (base_url, api_key, contractId, tokenId, receiver, percen
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify(request_body)
+    body: JSON.stringify(requestBody)
   });
   return res.json();
 }
