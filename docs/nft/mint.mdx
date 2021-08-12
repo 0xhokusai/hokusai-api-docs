@@ -85,8 +85,8 @@ import requests
 
 base_url = "https://api.hokusai.app"
 
-def mint_nft(base_url: str, api_key: str, contractId: str, to: str, tokenUri: str):
-  path = f"/v1/nfts/{contractId}/mint"
+def mint_nft(base_url: str, api_key: str, contract_id: str, to: str, tokenUri: str):
+  path = f"/v1/nfts/{contract_id}/mint"
 
   params = {
     "key": api_key
