@@ -68,8 +68,8 @@ import requests
 
 base_url = "https://api.hokusai.app"
 
-def get_nft(base_url: str, api_key: str, contractId: str, tokenId: str):
-  path = f"/v1/nfts/{contractId}/{tokenId}"
+def get_nft(base_url: str, api_key: str, contract_id: str, token_id: str):
+  path = f"/v1/nfts/{contract_id}/{token_id}"
 
   params = {
     "key": api_key
