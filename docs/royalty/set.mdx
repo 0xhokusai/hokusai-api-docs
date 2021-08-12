@@ -90,8 +90,8 @@ import requests
 
 base_url = "https://api.hokusai.app"
 
-def set_royalty(base_url: str, api_key: str, contractId: str, tokenId: str, receiver: str, percentage: float):
-  path = f"/v1/nfts/{contractId}/{tokenId}/royalty"
+def set_royalty(base_url: str, api_key: str, contract_id: str, token_id: str, receiver: str, percentage: float):
+  path = f"/v1/nfts/{contract_id}/{token_id}/royalty"
 
   params = {
     "key": api_key
