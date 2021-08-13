@@ -28,10 +28,6 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      logo: {
-        alt: 'Hokusai Logo',
-        src: 'img/hokusai.png',
-      },
       links: [
         {
           title: 'Community',
@@ -78,9 +74,10 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/0xhokusai/hokusai-api-docs/edit/main/website/',
+          // editUrl:
+          //   'https://github.com/0xhokusai/hokusai-api-docs/edit/main/website/',
           routeBasePath: '/',
+          sidebarCollapsed: false,
         },
         blog: {
           showReadingTime: true,

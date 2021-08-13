@@ -1,0 +1,25 @@
+---
+id: request
+title: リクエスト
+sidebar_position: 2.2
+description: Hokusai API のリクエストについて
+keywords:
+  - Hokusai api
+  - リクエスト
+---
+
+Hokusai API のリクエストは以下のプロトコルに従います。
+- 全ての API リクエストは HTTPS で送信します。
+- パラメータは、パス、クエリ、または JSON 形式のリクエストボディで送信します。
+- 全ての API リクエストは、クエリパラメータに API Key を値として持つ `key` パラメータが必要となります。詳細は[認証](/authentication)で確認してください。
+
+## リクエストボディ
+
+特定のエンドポイントは、リクエストボディでパラメータを渡すことができます。リクエストボディは、JSONオブジェクトの形で、キーの名前は[camel case](https://en.wikipedia.org/wiki/Camel_case)で表記します。
+以下にリクエストボディの例を示します。
+```json title="/nfts/{contractId}/mint へのリクエストボディの例"
+{
+  "to": "0x640cd26d5bd53a2342bdcc8e9930282c542e0e98",
+  "tokenUri": "https://example.com/1"
+}
+```
