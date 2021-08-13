@@ -9,15 +9,14 @@ slug: /intro
   
   
 
-![Hokusai Image](../assets/intro-top.png)
+![intro-top](../assets/intro-top.png)
 
 
-Hokusai API ドキュメント へようこそ！Hokusai では REST を利用した API の提供を行っています。このドキュメントは、Hokusai API の仕様について説明しています。
-
+Hokusai APIは、NFTを活用できるAPIを提供します。Hokusai APIを使用すると**誰でも簡単に**NFTの発行・ロイヤリティの設定を既存のWEBサービスに導入するこができます。
 ## Hokusai APIについて
   
 Hokusai APIは、誰でも簡単にNFTを導入することが可能なNFT専用のAPIです。
-![Hokusai Image](../assets/intro-image.png)
+![intro-image](../assets/intro-image.png)
 
 ## Hokusai APIの特徴
 
