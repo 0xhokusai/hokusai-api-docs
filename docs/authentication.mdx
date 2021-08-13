@@ -1,0 +1,21 @@
+---
+id: authentication
+title: 認証
+sidebar_position: 2.2
+description: Hokusai API の認証について
+keywords:
+  - Hokusai api
+  - 認証
+---
+import CodeBlock from '@theme/CodeBlock';
+
+Hokusai API では全てのリクエストに対して、有効性を確認するために認証を要求します。
+
+ユーザはリクエストの認証を行うために、URLクエリの `key` パラメータに API Key を指定します。
+以下はリクエストの例です。
+
+```:bash
+https://api.hokusai.app/v1/nfts/{contractAddress}/mint?key={apiKey}
+```
+
+このように、全てのエンドポイントには、API Key を値として持つ `key` パラメータの指定が必要となります。

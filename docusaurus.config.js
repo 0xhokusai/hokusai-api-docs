@@ -20,18 +20,10 @@ module.exports = {
         src: 'img/hokusai.png',
       },
       items: [
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
       ],
     },
     footer: {
       style: 'dark',
-      logo: {
-        alt: 'Hokusai Logo',
-        src: 'img/hokusai.png',
-      },
       links: [
         {
           title: 'Community',
@@ -78,9 +70,10 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/0xhokusai/hokusai-api-docs/edit/main/website/',
+          // editUrl:
+          //   'https://github.com/0xhokusai/hokusai-api-docs/edit/main/website/',
           routeBasePath: '/',
+          sidebarCollapsed: false,
         },
         blog: {
           showReadingTime: true,
@@ -94,18 +87,4 @@ module.exports = {
       },
     ],
   ],
-  i18n: {
-    defaultLocale: 'ja',
-    locales: ['ja', 'en'],
-    localeConfigs: {
-      ja: {
-        label: '日本語',
-        direction: 'ltr',
-      },
-      en: {
-        label: 'English',
-        direction: 'ltr',
-      },
-    }
-  }
 };

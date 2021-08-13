@@ -1,0 +1,92 @@
+---
+title: ロイヤリティの情報を取得する
+sidebar_position: 1
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# ロイヤリティの情報を取得する
+
+### `GET /v1/nfts/{contractId}/{tokenId}/royalty`
+
+NFT のロイヤリティ情報を取得します。
+
+### リクエストパラメータ
+|パラメータ|型|値の例|説明|Required|
+|--|:--:|:--:|--|--|
+|`contractId`|string|`ADXS6zyen4NctAjH`|Hokusai API から発行された`contractId`|Required|
+|`tokenId`|string|`1`|Hokusai API により NFT を mint した際に発行された`tokenId`|Required|
+
+### レスポンス
+|キー|型|値の例|説明|
+|--|--|:--:|--|
+|`receiver`|string|`0x3a93da588954acf4d0d8f1f1a4439fa79d84cf29`|ロイヤリティ受信者のEthereumアドレス|
+|`percentage`|number|`10`|ロイヤリティの割合（0~100%)|
+
+### リクエスト例
+<Tabs
+  defaultValue="curl"
+  groupId="programming-language"
+  values={[
+    { label: 'Curl', value: 'curl', },
+    { label: 'JavaScript', value: 'js', },
+    { label: 'Python', value: 'py', },
+  ]
+}>
+<TabItem value="curl">
+
+```bash
+curl "https://api.hokusai.app/v1/nfts/ADXS6zyen4NctAjH/1/royalty?key=fKe2rDFUZjSSdXfW"
+```
+
+</TabItem>
+<TabItem value="js">
+
+```js
+const baseUrl = "https://api.hokusai.app"
+
+const getRoyalty = async (baseUrl, apiKey, contractId, tokenId) => {
+  const path = `/v1/nfts/${contractId}/${tokenId}/royalty`
+  const url = new URL(baseUrl + path);
+
+  const params = {
+    key: apiKey
+  };
+
+  url.search = new URLSearchParams(params).toString();
+
+  const res = await fetch(url);
+  return res.json();
+}
+```
+
+</TabItem>
+<TabItem value="py">
+
+```py
+import requests
+
+base_url = "https://api.hokusai.app"
+
+def get_royalty(base_url: str, api_key: str, contract_id: str, token_id: str):
+  path = f"/v1/nfts/{contract_id}/{token_id}"
+
+  params = {
+    "key": api_key
+  }
+
+  res = requests.get(base_url + path, params=params)
+  return res.json()
+```
+
+</TabItem>
+</Tabs>
+
+#### レスポンス
+
+```json
+{
+  "receiver": "0x3a93da588954acf4d0d8f1f1a4439fa79d84cf29",
+  "percentage": 10
+}
+```
