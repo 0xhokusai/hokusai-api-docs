@@ -1,12 +1,9 @@
 ---
 id: intro
-title: Hokusai API
+title: Hokusai APIへようこそ！
 sidebar_position: 1
 slug: /intro
 ---
-  
-  
-  
   
 
 ![intro-top](../assets/intro-top.png)
@@ -31,13 +28,12 @@ Hokusai APIでは、ブロックチェーンネットワークと簡単にやり
 ブロックチェーンの知識なく、既存のWEBサービスに導入ができます。  
 Hokusai APIはREST APIであり、HTTPSで通信します。HTTPSをサポートすると、簡単にAPIを呼び出すことが可能になります。
 
-APIを呼び出す際には、有効なAPI keyとAPI secretが必要になります。APIをご利用になりたい方は、[こちら](http://example.com/)からAPI Keyの発行申請を行ってください。
+APIを呼び出す際には、有効なAPI keyとAPI secretが必要になります。APIをご利用になりたい方は、[こちら](https://hokusai.app/pre-register)からAPI Keyの発行申請を行ってください。
 
 #### 柔軟なサポート体制
 またHokusai APIではDiscordサーバーを用意しています。Discordサーバーでは、Hokusaiチームに気軽に質問や問い合せなどのサポートを受けることが可能です。  
 [こちら](https://discord.gg/34fmuE25G2)からご参加ください。
-   
-   
+
 ### - 利用ユーザーにやさしい設計
 NFTを購入・発行するためには、
 
@@ -54,9 +50,12 @@ Hokusai APIを利用すれば、暗号資産を購入する必要がなくなり
 ### 3.GAS代（ネットワーク手数料）が無料
 Hokusai APIの利用者は、どんなプランを利用していてもNFTの発行と送信にかかるGAS代が完全に無料です。
 昨今GAS代の高騰が話題になりましたがHokusai APIでは、GAS代が一切かかりません。
+
 --- 
 
 ## Hokusai APIを利用してNFTプラットフォームを開発しよう！
-### 1.API key発行申請を行う
-### 2.Hokusai API ドキュメントを読む
+### API key発行申請を行う
+[こちら](https://hokusai.app/pre-register)のフォームからAPI Keyの発行申請を行ってください。
+### 2.認証を行う
+[こちら](/authentication)のページを参考に認証を行ってください。
 
