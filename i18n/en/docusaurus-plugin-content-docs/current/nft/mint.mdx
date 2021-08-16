@@ -1,0 +1,113 @@
+---
+title: NFTを発行する
+sidebar_position: 2
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# NFTを発行する
+
+### `POST /v1/nfts/{contractId}/mint`
+
+NFT を [Mint](/glosarry#mint)します。
+
+### リクエストパラメータ
+|パラメータ|型|値の例|説明|Required|
+|--|:--:|:--:|--|--|
+|`contractId`|string|`ADXS6zyen4NctAjH`|Hokusai API から発行された`contractId`|Required|
+
+### リクエストボディ
+|キー|型|値の例|説明|
+|--|:--:|:--:|--|
+|`to`|string|`0x3a93da588954acf4d0d8f1f1a4439fa79d84cf29`|NFTを発行するアドレス|
+|`tokeuUri`|string|`https://example.com/1`|NFT metadata のURI|
+
+### レスポンス
+|キー|型|値の例|説明|
+|--|:--:|:--:|--|
+|`txHash`|string|`0xc968510337593d167efa433ab3726634cab8754d88f38e6e61e8ac7071601c42`|NFT を発行するトランザクションのハッシュ値|
+
+### リクエスト例
+<Tabs
+  defaultValue="curl"
+  groupId="programming-language"
+  values={[
+    { label: 'Curl', value: 'curl', },
+    { label: 'JavaScript', value: 'js', },
+    { label: 'Python', value: 'py', },
+  ]
+}>
+<TabItem value="curl">
+
+```bash
+curl -X POST -H "Content-Type: application/json" \ 
+"https://api.hokusai.app/v1/nfts/ADXS6zyen4NctAjH/mint?key=fKe2rDFUZjSSdXfW" \
+-d '{"to":"0x3a93da588954acf4d0d8f1f1a4439fa79d84cf29", "tokenUri": "https://example.com/1"}'
+```
+
+</TabItem>
+<TabItem value="js">
+
+```js
+const baseUrl = "https://api.hokusai.app"
+
+const mintNft = async (baseUrl, apiKey, contractId, to, tokenUri) => {
+  const path = `/v1/nfts/${contractId}/mint`
+  const url = new URL(baseUrl + path);
+
+  const params = {
+    key: apiKey
+  };
+
+  const requestBody = {
+    to,
+    tokenUri,
+  };
+
+  url.search = new URLSearchParams(params).toString();
+
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(requestBody)
+  });
+  return res.json();
+}
+```
+
+</TabItem>
+<TabItem value="py">
+
+```py
+import requests
+
+base_url = "https://api.hokusai.app"
+
+def mint_nft(base_url: str, api_key: str, contract_id: str, to: str, tokenUri: str):
+  path = f"/v1/nfts/{contract_id}/mint"
+
+  params = {
+    "key": api_key
+  }
+
+  request_body = {
+    "to": to,
+    "tokenUri": tokenUri,
+  }
+
+  res = requests.post(base_url + path, params=params, json=request_body)
+  return res.json()
+```
+
+</TabItem>
+</Tabs>
+
+#### レスポンス
+
+```json
+{
+  "txHash": "0xc968510337593d167efa433ab3726634cab8754d88f38e6e61e8ac7071601c42"
+}
+```

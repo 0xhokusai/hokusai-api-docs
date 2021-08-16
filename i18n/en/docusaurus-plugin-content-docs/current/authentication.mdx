@@ -1,0 +1,19 @@
+---
+id: authentication
+title: Authentication
+sidebar_position: 2.2
+description: Authentication for Hokusai API
+keywords:
+  - Hokusai api
+  - authentication
+---
+import CodeBlock from '@theme/CodeBlock';
+
+Hokusai API requires all requests to be authenticated to verify validity.
+To authenticate requests, users should specify the API Key in the `key` parameter of the URL query.
+The following is an example of a request.
+```:bash
+https://api.hokusai.app/v1/nfts/{contractAddress}/mint?key={apiKey}
+```
+
+As you can see, all endpoints need to specify `key` parameter with the API Key.

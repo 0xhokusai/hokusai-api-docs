@@ -1,0 +1,23 @@
+---
+id: endpoint
+title: Endpoint
+sidebar_position: 2.1
+description: Endpoint for Hokusai API
+keywords:
+  - Hokusai api
+  - Endpoint
+---
+
+In Hokusai API, you send a request to the following base URL.
+```
+https://api.hokusai.app/
+```
+
+Hokusai API currently provides the following endpoints.
+
+|endpoint|description|
+|--|--|
+|[`GET /v1/nfts/{contractId}/{tokenId}`](/nft/get)|Get NFT information|
+|[`POST /v1/nfts/{contractId}/mint`](/nft/mint)|[Mint](/glosarry#Mint) NFT|
+|[`GET /v1/nfts/{contractId}/{tokenId}/royalty`](/royalty/get)|Get a royalty of specific NFT|
+|[`POST /v1/nfts/{contractId}/{tokenId}/royalty`](/royalty/set)|Set a royalty of specific NFT|
