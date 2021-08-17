@@ -1,34 +1,34 @@
 ---
 id: responses
-title: レスポンス
+title: Response
 sidebar_position: 2.2
-description: Hokusai API のレスポンスについて
+description: Response for Hokusai API
 keywords:
   - Hokusai api
-  - レスポンス
+  - Response
 ---
 
-Hokusai API は HTTP ステータスコード、レスポンスボディによりリクエストの結果を返します。
+The Hokusai API returns the result of the request by HTTP status code and response body.
 
-## レスポンスボディ
+## Response Body
 
-レスポンスボディは、リクエスト結果の詳細を含むJSONオブジェクトです。
-各種エンドポイントごとにレスポンスボディの内容は異なります。
-以下にレスポンスボディの例を示します。
-```json title="/nfts/{contractId}/mint からのレスポンスボディの例"
+The response body is a JSON object that contains the details of the request result.
+The content of the response body differs for each endpoint.
+An example of a response body is shown below
+```json title="/nfts/{contractId}/mint"
 {
   "txHash": "string"
 }
 ```
 
-## HTTP ステータスコード
+## HTTP Status Code
 
-Hokusai API では正常なリクエストに対するステータスコードとして、`200`を返します。
-以下の表は、Hokusai API が返すステータスコードの一覧です。
+The Hokusai API returns `200` as the status code for a successful request.
+The following table shows status codes returned by the Hokusai API.
 
-|HTTP ステータスコード|説明|
+|HTTP Status Code|Description|
 |--|--|
-|`200`|リクエストが正常に処理されました|
-|`400`|必要なパラメータが無い、パラメータの値が間違っています|
-|`403`|誤ったエンドポイントにリクエストを送信しています|
-|`500`|内部でエラーが発生しています。誤った`tokenId`が送信されたり、認証がうまくできていない可能性があります|
+|`200`|Success|
+|`400`|Invalid parameter|
+|`403`|Unauthorized Request|
+|`500`|Internal error|

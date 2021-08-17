@@ -1,33 +1,35 @@
 ---
-title: NFTを発行する
+title: Mint NFT
 sidebar_position: 2
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# NFTを発行する
-
 ### `POST /v1/nfts/{contractId}/mint`
 
-NFT を [Mint](/glosarry#mint)します。
+[Mint](/glosarry#mint) NFT
 
-### リクエストパラメータ
-|パラメータ|型|値の例|説明|Required|
+### Request Parameter
+
+|Parameter|Type|Example Value|Description|Required|
 |--|:--:|:--:|--|--|
-|`contractId`|string|`ADXS6zyen4NctAjH`|Hokusai API から発行された`contractId`|Required|
+|`contractId`|string|`ADXS6zyen4NctAjH`|`contractId` issued by Hokusa API|Required|
 
-### リクエストボディ
-|キー|型|値の例|説明|
+### Request Body
+
+|Key|Type|Example Value|Description|
 |--|:--:|:--:|--|
-|`to`|string|`0x3a93da588954acf4d0d8f1f1a4439fa79d84cf29`|NFTを発行するアドレス|
-|`tokeuUri`|string|`https://example.com/1`|NFT metadata のURI|
+|`to`|string|`0x3a93da588954acf4d0d8f1f1a4439fa79d84cf29`|Eth Address to mint NFT|
+|`tokenUri`|string|`https://example.com/1`|URI of metadata|
 
-### レスポンス
-|キー|型|値の例|説明|
+### Response
+
+|Key|Type|Example Value|Description|
 |--|:--:|:--:|--|
-|`txHash`|string|`0xc968510337593d167efa433ab3726634cab8754d88f38e6e61e8ac7071601c42`|NFT を発行するトランザクションのハッシュ値|
+|`txHash`|string|`0xc968510337593d167efa433ab3726634cab8754d88f38e6e61e8ac7071601c42`|Hash value of the transaction that issues the NFT|
 
-### リクエスト例
+### Example Request
+
 <Tabs
   defaultValue="curl"
   groupId="programming-language"
@@ -104,7 +106,7 @@ def mint_nft(base_url: str, api_key: str, contract_id: str, to: str, tokenUri: s
 </TabItem>
 </Tabs>
 
-#### レスポンス
+#### Response
 
 ```json
 {
