@@ -46,7 +46,7 @@ function Home() {
                             <Link className="button button--primary" to="/getting-started">
                                 <Translate>Hokusai API を始める</Translate>
                             </Link>
-                            <Link className="button button--info" to="https://docusaurus.new">
+                            <Link className="button button--info" to="/api">
                                 <Translate>API ドキュメント</Translate>
                             </Link>
                         </div>
