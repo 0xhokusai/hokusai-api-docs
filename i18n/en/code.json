@@ -158,5 +158,35 @@
   "theme.TOCCollapsible.toggleButtonLabel": {
     "message": "On this page",
     "description": "The label used by the button on the collapsible TOC component"
+  },
+  "Hokusai Logo": {
+    "message": "Hokusai Logo"
+  },
+  "homepage.title": {
+    "message": "Fast and Easy for NFT"
+  },
+  "Hokusai API を始める": {
+    "message": "Getting Started"
+  },
+  "API ドキュメント": {
+    "message": "API Document"
+  },
+  "GAS代が無料で利用できるため、暗号資産の管理をする必要がありません": {
+    "message": "No fees, No cryptocurrency"
+  },
+  "Hokusai APIの利用者は、NFTの発行や送信に必要なGAS代（ネットワーク手数料）を用意する必要がありません。これは、Hokusaiが事業者やアーティストの代わりにブロックチェーンのネットワークに手数料を支払うためです。": {
+    "message": "Users of the Hokusai API do not need to prepare GAS fees (network fees) for minting or transferring NFTs. This is because Hokusai pays the fee to the blockchain network on behalf of the business or artist."
+  },
+  "WebエンジニアがいるだけでNFTのプロダクトを開発できます": {
+    "message": "Only web engineers"
+  },
+  "通常、NFT関連のプロダクトを開発する場合はブロックチェーンエンジニアが必要です。しかし、Hokusai APIはブロックチェーン部分を取りまとめてWeb APIに落とし込んでいるため、Webエンジニアがブロックチェーン部分に直接触れる必要がなく、NFTのプロダクトを開発できます。 決済機能をStripeを使って組み込むように、NFTを自社サイトに組み込むことが可能です。": {
+    "message": "To develop NFT-related products, blockchain engineers are required. However, the Hokusai API integrates the blockchain part into a web API, so web engineers do not need to directly touch the blockchain part to develop NFT products. It is possible to integrate NFT into a company's website in the same way that payment functions are integrated using Stripe."
+  },
+  "Hokusai チームによる手厚いサポート": {
+    "message": "Extensive support from blockchain engineers"
+  },
+  "Hokusaiチームには、ブロックチェーンエンジニアが複数います。そのため、NFTの前提知識に詰まった時やプロダクトのアーキテクチャに困った時には技術の相談をすることができます。": {
+    "message": "There are several blockchain engineers in the Hokusai team. Therefore, when you are stuck on, you can consult with them about the technology."
   }
 }

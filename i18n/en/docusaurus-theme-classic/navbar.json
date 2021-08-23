@@ -2,5 +2,17 @@
   "title": {
     "message": "Hokusai API refrence",
     "description": "The title in the navbar"
+  },
+  "item.label.API ドキュメント": {
+    "message": "API Document",
+    "description": "Navbar item with label API Document"
+  },
+  "item.label.Hokusai API を始める": {
+    "message": "Getting Started",
+    "description": "Navbar item with label Hokusai Getting Started"
+  },
+  "item.label.ユースケース": {
+    "message": "Usecase",
+    "description": "Navbar item with label Usecase"
   }
 }

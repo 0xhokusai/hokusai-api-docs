@@ -36,6 +36,12 @@ module.exports = {
           label: 'ユースケース',
         },
         {
+          href: 'https://github.com/0xhokusai/hokusai-api-docs',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+          position: 'right',
+        },
+        {
           type: 'localeDropdown',
           position: 'right',
         },

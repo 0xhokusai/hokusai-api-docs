@@ -49,15 +49,6 @@ function Home() {
                             <Link className="button button--info" to="https://docusaurus.new">
                                 <Translate>API ドキュメント</Translate>
                             </Link>
-                            <span className={styles.indexCtasGitHubButtonWrapper}>
-                                <iframe
-                                    className={styles.indexCtasGitHubButton}
-                                    src="https://ghbtns.com/github-btn.html?user=0xhokusai&amp;repo=hokusai-api-docs&amp;type=star&amp;count=true&amp;size=large"
-                                    width={120}
-                                    height={35}
-                                    title="GitHub Stars"
-                                />
-                            </span>
                         </div>
                     </div>
                 </div>
