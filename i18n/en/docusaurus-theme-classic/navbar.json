@@ -8,8 +8,8 @@
     "description": "Navbar item with label API Document"
   },
   "item.label.Hokusai API を始める": {
-    "message": "Getting Started",
-    "description": "Navbar item with label Hokusai Getting Started"
+    "message": "Get Started",
+    "description": "Navbar item with label Hokusai Get Started"
   },
   "item.label.ユースケース": {
     "message": "Usecase",

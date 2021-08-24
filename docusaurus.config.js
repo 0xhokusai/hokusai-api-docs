@@ -26,7 +26,7 @@ module.exports = {
           label: 'API ドキュメント',
         },
         {
-          to: '/getting-started',
+          to: '/get-started',
           position: 'left',
           label: 'Hokusai API を始める',
         },
