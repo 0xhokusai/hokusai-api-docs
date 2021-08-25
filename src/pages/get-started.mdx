@@ -7,47 +7,50 @@ keywords:
   - get started
   - introduction
   - 入門
+  - チュートリアル
+  - tutorial
 ---
 
-# Get Started
+# Hokusai API を始めよう！
 
-This tutorial will follow [repository](https://github.com/0xhokusai/hokusai-get-started).
+このページでは Hokusai API を素早く利用するためのチュートリアルを提供します。
+[このリポジトリ](https://github.com/0xhokusai/hokusai-get-started)をローカルに clone して、以下のチュートリアルへお進みください。
 
-To get started with Hokusai API fastly, please clone [the repository](https://github.com/0xhokusai/hokusai-get-started) and proceed with the following tutorial.
+## 1. API Key の取得
 
-## 1. Obtain API Key
+[こちらのフォーム](https://hokusai.app/pre-register)からAPI Keyの発行申請を行ってください。
+API Key発行まで2~3営業日お待ち下さい。
 
-Please apply for an API Key from [here](https://hokusai.app/pre-register).
-It takes for 2~3 business days to issue the API Key.
+## 2. ウォレットの作成
 
-## 2. Create your wallet
+NFT　を Mint するために、ウォレットアドレスを保持する必要があります。
+ウォレットソフトウェアとして、[Metamask](https://docs.metamask.io) を利用することをお勧めします。
 
-To mint NFT, you must hold your wallet addrress.
-We recommend [Metamask](https://docs.metamask.io) to use for wallet software.
-
-Metamask is a software cryptocurrency wallet used to interact with the Ethereum blockchain.
-These articles provide great tutorials for new to Metamask
+Metamask は、Ethereum などのブロックチェーンとやりとりを行う、仮想通貨のウォレットです。
+Metamask を利用したことがない方は、以下の記事を参考に Metamask の導入、 Polygon Munbai Network の設定を行ってください。
 - [How to create Metamask Wallet](https://docs.matic.network/docs/develop/metamask/hello/)
 - [Configure Polygon on Metamask](https://docs.matic.network/docs/develop/metamask/config-polygon-on-metamask)
 
-## 3. Publish NFT metadata
+## 3. NFT のメタデータを公開
 
-We use [nft.storage](https://nft.storage/) to publish a NFT metadata for ease.
-Run the code below.
+簡単に NFT のメタデータを公開するために、[nft.storage](https://nft.storage/) と呼ばれるサービスを利用します。
+[nft.storage](https://nft.storage/) では、[IPFS](https://docs.ipfs.io/) を利用してメタデータの保存・公開をします。
+[IPFS](https://docs.ipfs.io/) とは、ファイルやウェブサイト、アプリケーション、データを保存・アクセスするための分散システムです。
+
+以下のコードを実行して、メタデータを公開します。
 
 ```:bash
 cp .env.sample .env # and rewrite API Keys
 yarn store-image # and you will publish metadata with hokusai.png
 ```
 
-You will get URL for the metadata like this.
+すると、以下のような URL が得られます。
 
 ```
 https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2xnvjnlnrb4//metadata.json
 ```
 
-[IPFS](https://docs.ipfs.io/) is a distributed system for storing and accessing files, websites, applications, and data.
-And you can access the metadata uploaded on IPFS via HTTPS URL like this.
+そして、IPFS上にアップロードされたメタデータに対して、以下のURLからアクセスすることができます。
 
 ```:bash
 curl https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2xnvjnlnrb4/metadata.json
@@ -59,24 +62,28 @@ curl https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2xnv
 }
 ```
 
-## 3. Let's Hokusai API
+## 3. Hokusai API を動かす
 
-Now, you're ready to use Hokusai API!
+Hokusai API を動かす準備が整いました。
 
 ### Mint NFT
+
+NFT を Mint してみましょう。
+以下のコードを実行してください。
 
 ```:bash
 yarn mint-nft {to} {tokenUri}
 ```
 
-If you don't know parameters, check [Hokudai API Document](https://docs.hokusai.app/).
+パラメータについて分からないことがあれば、[Hokudai API ドキュメント](https://docs.hokusai.app/) を確認してください。
 
 ### Get NFT
 
-`tokenId` issued by Hokusai API can check via [polygonscan](https://mumbai.polygonscan.com)
+Mint 時に発行された `tokenId` を利用して、NFT の情報を取得してみましょう。
 
 ```:bash
 yarn get-nft {tokenId}
 ```
 
-You minted NFT and got NFT info via Hokusai API.
+これで、Hokusai API のチュートリアルは終了です。
+Hokusai API を利用して、NFT を楽しみましょう！
