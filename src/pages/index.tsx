@@ -57,36 +57,39 @@ function Home() {
                     </div>
                 </div>
                 <div className={styles.section}>
-                    <div className="container text--center margin-bottom--xl">
+                    <div className="container margin-bottom--xl">
                         <div className="row">
                             <div className="col">
-                                <h2 className={clsx(styles.featureHeading)}>
-                                    <Translate>GAS代が無料で利用できるため、暗号資産の管理をする必要がありません</Translate>
+                                <h2 className={clsx(styles.featureHeading, "text--center")}>
+                                    <Translate>GAS代が無料</Translate>
                                 </h2>
                                 <p className="padding-horiz--md">
                                     <Translate>
-                                        Hokusai APIの利用者は、NFTの発行や送信に必要なGAS代（ネットワーク手数料）を用意する必要がありません。これは、Hokusaiが事業者やアーティストの代わりにブロックチェーンのネットワークに手数料を支払うためです。
+                                        Hokusaiが事業者やアーティストの代わりにブロックチェーンのネットワークに手数料を支払うため、
+                                        Hokusai APIの利用者は、NFTの発行や送信に必要なGAS代（ネットワーク手数料）を用意する必要がありません。
                                     </Translate>
                                 </p>
                             </div>
                             <div className="col">
-                                <h2 className={clsx(styles.featureHeading)}>
-                                    <Translate>WebエンジニアがいるだけでNFTのプロダクトを開発できます</Translate>
+                                <h2 className={clsx(styles.featureHeading, "text--center")}>
+                                    <Translate>Webエンジニアでも開発可能</Translate>
                                 </h2>
                                 <p className="padding-horiz--md">
                                     <Translate>
-                                        通常、NFT関連のプロダクトを開発する場合はブロックチェーンエンジニアが必要です。しかし、Hokusai APIはブロックチェーン部分を取りまとめてWeb APIに落とし込んでいるため、Webエンジニアがブロックチェーン部分に直接触れる必要がなく、NFTのプロダクトを開発できます。
-                                        決済機能をStripeを使って組み込むように、NFTを自社サイトに組み込むことが可能です。
+                                        通常、NFT関連のプロダクトを開発する場合はブロックチェーンエンジニアが必要です。
+                                        Hokusai API を利用することで、Webエンジニアのみで NFT のプロダクトを開発できます。
+                                        決済機能を Stripe を使って組み込むように、NFTを自社サイトに組み込むことが可能です。
                                     </Translate>
                                 </p>
                             </div>
                             <div className="col">
-                                <h2 className={clsx(styles.featureHeading)}>
+                                <h2 className={clsx(styles.featureHeading, "text--center")}>
                                     <Translate>Hokusai チームによる手厚いサポート</Translate>
                                 </h2>
                                 <p className="padding-horiz--md">
                                     <Translate>
-                                        Hokusaiチームには、ブロックチェーンエンジニアが複数います。そのため、NFTの前提知識に詰まった時やプロダクトのアーキテクチャに困った時には技術の相談をすることができます。
+                                        Hokusaiチームには、ブロックチェーンエンジニアが複数在籍しています。
+                                        そのため、NFTの前提知識に詰まった時やプロダクトのアーキテクチャに困った時には技術の相談をすることができます。
                                     </Translate>
                                 </p>
                             </div>
