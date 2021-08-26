@@ -1,0 +1,35 @@
+---
+id: metadata
+title: Metadata
+sidebar_position: 2.3
+description: about metadata of NFT
+keywords:
+  - Hokusai api
+  - Metadata
+---
+
+when [Minting NFT](nft/mint), you need to pass a parameter called `tokenUri`.
+A `tokenUri` is a URI containing metadata that allows an application to display information about an NFT.
+This chapter describes the metadata specification.
+
+Metadata is written in JSON format.
+The following is an example of metadata.
+
+```json
+{
+  "name": "Hokusai Logo",
+  "description": "Cool Hokusai Logo", 
+  "image": "https://docs.hokusai.app/img/hokusai.png", 
+}
+```
+
+Metadata can also include properties such as the following
+
+|property|description|
+|--|--|
+|name|Name of NFT.|
+|image|Image URL of NFT. Basic image formats such as PNG and JPG are supported.|
+|description|Description of NFT.|
+
+## References
+- [Metadata Standards | OpenSea](https://docs.opensea.io/docs/metadata-standards)
