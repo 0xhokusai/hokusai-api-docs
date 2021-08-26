@@ -13,17 +13,17 @@ keywords:
 
 # Hokusai API を始めよう！
 
-このページでは Hokusai API を素早く利用するためのチュートリアルを提供します。
+このページでは Hokusai API を利用するためのチュートリアルを提供します。
 [このリポジトリ](https://github.com/0xhokusai/hokusai-get-started)をローカルに clone して、以下のチュートリアルへお進みください。
 
 ## 1. API Key の取得
 
-[こちらのフォーム](https://hokusai.app/pre-register)からAPI Keyの発行申請を行ってください。
+[こちらのフォーム](https://ir9l8pcvcmm.typeform.com/to/FSREILsN?typeform-source=hokusai.app)からAPI Keyの発行申請を行ってください。
 API Key発行まで2~3営業日お待ち下さい。
 
 ## 2. ウォレットの作成
 
-NFT　を Mint するために、ウォレットアドレスを保持する必要があります。
+NFT を Mint するために、ウォレットアドレスを保持する必要があります。
 ウォレットソフトウェアとして、[Metamask](https://docs.metamask.io) を利用することをお勧めします。
 
 Metamask は、Ethereum などのブロックチェーンとやりとりを行う、仮想通貨のウォレットです。
@@ -33,26 +33,29 @@ Metamask を利用したことがない方は、以下の記事を参考に Meta
 
 ## 3. NFT のメタデータを公開
 
-簡単に NFT のメタデータを公開するために、[nft.storage](https://nft.storage/) と呼ばれるサービスを利用します。
+NFT は[特別なメタデータ](metadata)の URI を保持することができます。
+ここでは、メタデータの URI を簡単に公開する方法をご紹介します。
+
+今回は、NFT のメタデータを公開するために、[nft.storage](https://nft.storage/) と呼ばれるサービスを利用します。
 [nft.storage](https://nft.storage/) では、[IPFS](https://docs.ipfs.io/) を利用してメタデータの保存・公開をします。
 [IPFS](https://docs.ipfs.io/) とは、ファイルやウェブサイト、アプリケーション、データを保存・アクセスするための分散システムです。
 
 以下のコードを実行して、メタデータを公開します。
 
-```:bash
+```bash
 cp .env.sample .env # and rewrite API Keys
 yarn store-image # and you will publish metadata with hokusai.png
 ```
 
 すると、以下のような URL が得られます。
 
-```
+```bash
 https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2xnvjnlnrb4//metadata.json
 ```
 
 そして、IPFS上にアップロードされたメタデータに対して、以下のURLからアクセスすることができます。
 
-```:bash
+```bash
 curl https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2xnvjnlnrb4/metadata.json
 
 {
@@ -66,22 +69,22 @@ curl https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2xnv
 
 Hokusai API を動かす準備が整いました。
 
-### Mint NFT
+### NFT を発行する
 
 NFT を Mint してみましょう。
 以下のコードを実行してください。
 
-```:bash
+```bash
 yarn mint-nft {to} {tokenUri}
 ```
 
-パラメータについて分からないことがあれば、[Hokudai API ドキュメント](https://docs.hokusai.app/) を確認してください。
+パラメータの詳細については、[Hokudai API ドキュメント](https://docs.hokusai.app/) を確認してください。
 
-### Get NFT
+### NFT を取得する
 
 Mint 時に発行された `tokenId` を利用して、NFT の情報を取得してみましょう。
 
-```:bash
+```bash
 yarn get-nft {tokenId}
 ```
 

@@ -13,11 +13,11 @@ keywords:
 
 This tutorial will follow [repository](https://github.com/0xhokusai/hokusai-get-started).
 
-To get started with Hokusai API fastly, please clone [the repository](https://github.com/0xhokusai/hokusai-get-started) and proceed with the following tutorial.
+To get started with Hokusai API, please clone [the repository](https://github.com/0xhokusai/hokusai-get-started) and proceed with the following tutorial.
 
-## 1. Obtain API Key
+## 1. Get API Key
 
-Please apply for an API Key from [here](https://hokusai.app/pre-register).
+Please apply for an API Key from [here](https://ir9l8pcvcmm.typeform.com/to/FSREILsN?typeform-source=hokusai.app).
 It takes for 2~3 business days to issue the API Key.
 
 ## 2. Create your wallet
@@ -32,10 +32,13 @@ These articles provide great tutorials for new to Metamask
 
 ## 3. Publish NFT metadata
 
-We use [nft.storage](https://nft.storage/) to publish a NFT metadata for ease.
+NFTs hold URI for [special metadata](metadata).
+Here, we will show you how to easily publish metadata URI.
+
+We use [nft.storage](https://nft.storage/) to publish a NFT metadata.
 Run the code below.
 
-```:bash
+```bash
 cp .env.sample .env # and rewrite API Keys
 yarn store-image # and you will publish metadata with hokusai.png
 ```
@@ -49,7 +52,7 @@ https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2xnvjnlnr
 [IPFS](https://docs.ipfs.io/) is a distributed system for storing and accessing files, websites, applications, and data.
 And you can access the metadata uploaded on IPFS via HTTPS URL like this.
 
-```:bash
+```bash
 curl https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2xnvjnlnrb4/metadata.json
 
 {
@@ -65,11 +68,11 @@ Now, you're ready to use Hokusai API!
 
 ### Mint NFT
 
-```:bash
+```bash
 yarn mint-nft {to} {tokenUri}
 ```
 
-If you don't know parameters, check [Hokudai API Document](https://docs.hokusai.app/).
+Please check [Hokudai API Document](https://docs.hokusai.app/) for more details of parameter.
 
 ### Get NFT
 
