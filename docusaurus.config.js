@@ -3,9 +3,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Hokusai API refrence',
+  title: 'Hokusai API Documents',
   tagline: 'The world’s most powerful and easy-to-use NFT APIs',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://docs.hokusai.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -14,12 +14,33 @@ module.exports = {
   projectName: 'Hokusai API Documents', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Hokusai API refrence',
+      title: 'Hokusai API Documents',
       logo: {
         alt: 'Hokusai Logo',
         src: 'img/hokusai.png',
       },
       items: [
+        {
+          to: '/api',
+          position: 'left',
+          label: 'API ドキュメント',
+        },
+        {
+          to: '/get-started',
+          position: 'left',
+          label: 'Hokusai API を始める',
+        },
+        {
+          to: '/usecase',
+          position: 'left',
+          label: 'ユースケース',
+        },
+        {
+          href: 'https://github.com/0xhokusai/hokusai-api-docs',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+          position: 'right',
+        },
         {
           type: 'localeDropdown',
           position: 'right',
@@ -76,7 +97,7 @@ module.exports = {
           // Please change this to your repo.
           // editUrl:
           //   'https://github.com/0xhokusai/hokusai-api-docs/edit/main/website/',
-          routeBasePath: '/',
+          routeBasePath: '/api',
           sidebarCollapsed: false,
         },
         blog: {
@@ -104,5 +125,15 @@ module.exports = {
         direction: 'ltr',
       },
     }
-  }
+  },
+  plugins: [
+    ['@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 640, // max resized image's size.
+        min: 300, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+      }
+    ]
+  ]
 };
