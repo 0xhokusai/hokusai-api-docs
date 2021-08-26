@@ -43,7 +43,7 @@ function Home() {
                             />
                         </h1>
                         <div className={styles.indexCtas}>
-                            <Link className="button button--primary" to="/getting-started">
+                            <Link className="button button--primary" to="/get-started">
                                 <Translate>Hokusai API を始める</Translate>
                             </Link>
                             <Link className="button button--info" to="/api">
