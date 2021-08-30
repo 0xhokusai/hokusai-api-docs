@@ -1,30 +1,29 @@
 ---
-title: Get NFT Information
+title: NFTの情報を取得する
 sidebar_position: 1
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+# NFTの情報を取得する
+
 ### `GET /v1/nfts/{contractId}/{tokenId}`
 
-Get NFT Information.
+NFTの情報を取得します。
 
-### Request Parameter
-
-|Parameter|Type|Example Value|Description|Required|
+### リクエストパラメータ
+|パラメータ|型|値の例|説明|Required|
 |--|:--:|:--:|--|--|
-|`contractId`|string|`ADXS6zyen4NctAjH`|`contractId` issued by Hokusai API|Required|
-|`tokenId`|string|`1`|`tokenId` issued by Hokusai API when minting NFT|Required|
+|`contractId`|string|`ADXS6zyen4NctAjH`|Hokusai API から発行された`contractId`|Required|
+|`tokenId`|string|`1`|Hokusai API により NFT を mint した際に発行された`tokenId`|Required|
 
-### Response
-
-|Key|Type|Example Value|Description|
+### レスポンス
+|キー|型|値の例|説明|
 |--|:--:|:--:|--|
-|`id`|integer|`1`|`id` uniquely associated with a issued NFT|
-|`tokenUri`|string|`https://example.com/1`|URI of metadata|
+|`id`|integer|`1`|発行した NFT に一意に紐づく`id`|
+|`tokenUri`|string|`https://example.com/1`|メタデータのURI|
 
-### Example Request
-
+### リクエスト例
 <Tabs
   defaultValue="curl"
   groupId="programming-language"
@@ -83,7 +82,7 @@ def get_nft(base_url: str, api_key: str, contract_id: str, token_id: str):
 </TabItem>
 </Tabs>
 
-#### Response
+#### レスポンス
 
 ```json
 {

@@ -1,23 +1,23 @@
 ---
 id: endpoint
-title: エンドポイント
+title: Endpoint
 sidebar_position: 2.1
-description: Hokusai API のエンドポイントについて
+description: Endpoint for Hokusai API
 keywords:
   - Hokusai api
-  - エンドポイント
+  - Endpoint
 ---
 
-Hokusai API では以下のベース URL に対してリクエストを送信します。
+The base endpoint is:
 ```
 https://hokusai-api-gateway-1mtclftl.an.gateway.dev/
 ```
 
-また、Hokusai API では現在、以下のようなエンドポイントを提供しています。
+The Hokusai API currently provides the following endpoints.
 
-|エンドポイント|説明|
+|Endpoint|Description|
 |--|--|
-|[`GET /v1/nfts/{contractId}/{tokenId}`](nft/get)|NFTの情報を取得する|
-|[`POST /v1/nfts/{contractId}/mint`](nft/mint)|NFTを[Mint](glosarry#Mint)する|
-|[`GET /v1/nfts/{contractId}/{tokenId}/royalty`](royalty/get)|NFTのロイヤリティを取得する|
-|[`POST /v1/nfts/{contractId}/{tokenId}/royalty`](royalty/set)|NFTのロイヤリティを設定する|
+|[`GET /v1/nfts/{contractId}/{tokenId}`](nft/get)|Get NFT information|
+|[`POST /v1/nfts/{contractId}/mint`](nft/mint)|[Mint](glosarry#Mint) NFT|
+|[`GET /v1/nfts/{contractId}/{tokenId}/royalty`](royalty/get)|Get a royalty of specific NFT|
+|[`POST /v1/nfts/{contractId}/{tokenId}/royalty`](royalty/set)|Set a royalty of specific NFT|

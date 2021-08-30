@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "Hokusai API Documents",
+    "description": "The title in the navbar"
+  },
+  "item.label.API Document": {
+    "message": "API ドキュメント",
+    "description": "Navbar item with label API Document"
+  },
+  "item.label.Get Started": {
+    "message": "Hokusai API を始める",
+    "description": "Navbar item with label Get Started"
+  },
+  "item.label.Usecase": {
+    "message": "ユースケース",
+    "description": "Navbar item with label Usecase"
+  }
+}
