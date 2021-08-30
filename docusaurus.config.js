@@ -13,6 +13,20 @@ module.exports = {
   organizationName: 'JapanMonobundle Inc.', // Usually your GitHub org/user name.
   projectName: 'Hokusai API Documents', // Usually your repo name.
   themeConfig: {
+    metadatas: [
+      { name: 'og:url', content: 'https://docs.hokusai.app' },
+      { name: 'og:title', content: 'Hokusai API Documents' },
+      { name: 'og:description', content: 'The world’s most powerful and easy-to-use NFT APIs' },
+      { name: 'og:image', content: 'https://docs.hokusai.app/img/ogp.png' },
+      { name: 'og:image:alt', content: 'Hokusai Logo' },
+      { name: 'og:type', content: 'website' },
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:site', content: '@0xHokusai' },
+      { name: 'twitter:title', content: 'Hokusai API Documents' },
+      { name: 'twitter:description', content: 'The world’s most powerful and easy-to-use NFT APIs' },
+      { name: 'twitter:image', content: 'https://docs.hokusai.app/img/ogp.png' },
+      { name: 'twitter:image:alt', content: 'Hokusai Logo' },
+    ],
     navbar: {
       title: 'Hokusai API Documents',
       logo: {
