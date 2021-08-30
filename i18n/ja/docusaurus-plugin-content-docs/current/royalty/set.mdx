@@ -1,35 +1,37 @@
 ---
-title: Set Royalty
+title: ロイヤリティを設定する
 sidebar_position: 2
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+# ロイヤリティを設定する
+
 ### `POST /v1/nfts/{contractId}/{tokenId}/royalty`
 
-Set NFT royalty.
+NFT のロイヤリティ情報を設定します。
 
-### Request Parameter
+### リクエストパラメータ
 
-|Parameter|Type|Example Value|Description|Required|
+|パラメータ|型|値の例|説明|Required|
 |--|:--:|:--:|--|--|
-|`contractId`|string|`ADXS6zyen4NctAjH`|`contractId` issued by Hokusai API|Required|
-|`tokenId`|string|`1`|`tokenId` issued by Hokusai API when minting NFT|Required|
+|`contractId`|string|`ADXS6zyen4NctAjH`|Hokusai API から発行された`contractId`|Required|
+|`tokenId`|string|`1`|Hokusai API により NFT を mint した際に発行された`tokenId`|Required|
 
-### Request Body
+### リクエストボディ
 
-|Key|Type|Example Value|Description|
+|キー|型|値の例|説明|
 |--|:--:|:--:|--|
-|`receiver`|string|`0x3a93da588954acf4d0d8f1f1a4439fa79d84cf29`|Royalty recipient's Ethereum address|
-|`percentage`|number|`10`|Royalty rate (0~100%)|
+|`receiver`|string|`0x3a93da588954acf4d0d8f1f1a4439fa79d84cf29`|ロイヤリティ受信者のEthereumアドレス|
+|`percentage`|number|`10`|ロイヤリティの割合（0~100%)。小数第二位以下は四捨五入されます。|
 
-### Response
+### レスポンス
 
-|Key|Type|Example Value|Description|
+|キー|型|値の例|説明|
 |--|:--:|:--:|--|
-|`txHash`|string|`0xc968510337593d167efa433ab3726634cab8754d88f38e6e61e8ac7071601c42`|Hash value of the transaction that issues the NFT|
+|`txHash`|string|`0xc968510337593d167efa433ab3726634cab8754d88f38e6e61e8ac7071601c42`|NFT を発行するトランザクションのハッシュ値|
 
-### Example Request
+### リクエスト例
 
 <Tabs
   defaultValue="curl"
@@ -107,7 +109,7 @@ def set_royalty(base_url: str, api_key: str, contract_id: str, token_id: str, re
 </TabItem>
 </Tabs>
 
-#### Response
+#### レスポンス
 
 ```json
 {

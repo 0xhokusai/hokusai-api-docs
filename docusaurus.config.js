@@ -37,17 +37,17 @@ module.exports = {
         {
           to: '/api',
           position: 'left',
-          label: 'API ドキュメント',
+          label: 'API Document',
         },
         {
           to: '/get-started',
           position: 'left',
-          label: 'Hokusai API を始める',
+          label: 'Get Started',
         },
         {
           to: '/usecase',
           position: 'left',
-          label: 'ユースケース',
+          label: 'Usecase',
         },
         {
           href: 'https://github.com/0xhokusai/hokusai-api-docs',
@@ -137,7 +137,7 @@ module.exports = {
     ],
   ],
   i18n: {
-    defaultLocale: 'ja',
+    defaultLocale: 'en',
     locales: ['ja', 'en'],
     localeConfigs: {
       ja: {

@@ -1,54 +1,57 @@
 {
+  "homepage.title": {
+    "message": "NFTをより速く、簡単に。"
+  },
   "theme.NotFound.title": {
-    "message": "Page Not Found",
+    "message": "ページが見つかりません",
     "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
-    "message": "We could not find what you were looking for.",
+    "message": "お探しのページが見つかりませんでした。",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "message": "このページにリンクしているサイトの所有者に連絡をしてリンクが壊れていることを伝えてください。",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Close",
+    "message": "閉じる",
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Blog list page navigation",
+    "message": "ブログ記事一覧のナビゲーション",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Newer Entries",
+    "message": "新しい記事",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Older Entries",
+    "message": "過去の記事",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "One min read|{readingTime} min read",
+    "message": "約{readingTime}分",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Tags:",
+    "message": "タグ:",
     "description": "The label alongside a tag list"
   },
   "theme.blog.post.readMore": {
-    "message": "Read More",
+    "message": "もっと見る",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Blog post page navigation",
+    "message": "ブログ記事のナビゲーション",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Newer Post",
+    "message": "新しい記事",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Older Post",
+    "message": "過去の記事",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.sidebar.navAriaLabel": {
@@ -56,95 +59,95 @@
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "Tags",
+    "message": "タグ",
     "description": "The title of the tag list page"
   },
   "theme.blog.post.plurals": {
-    "message": "One post|{count} posts",
+    "message": "{count}件",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} tagged with \"{tagName}\"",
+    "message": "「{tagName}」タグの記事が{nPosts}あります",
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "View All Tags",
+    "message": "全てのタグを見る",
     "description": "The label of the link targeting the tag list page"
   },
-  "theme.docs.paginator.navAriaLabel": {
-    "message": "Docs pages navigation",
-    "description": "The ARIA label for the docs pagination"
-  },
-  "theme.docs.paginator.previous": {
-    "message": "Previous",
-    "description": "The label used to navigate to the previous doc"
-  },
-  "theme.docs.paginator.next": {
-    "message": "Next",
-    "description": "The label used to navigate to the next doc"
-  },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copy code to clipboard",
+    "message": "クリップボードにコードをコピー",
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.copied": {
-    "message": "Copied",
+    "message": "コピーしました",
     "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copy": {
-    "message": "Copy",
+    "message": "コピー",
     "description": "The copy button label on code blocks"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Expand sidebar",
+    "message": "サイドバーを開く",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Expand sidebar",
+    "message": "サイドバーを開く",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "ドキュメントのナビゲーション",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "前へ",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "次へ",
+    "description": "The label used to navigate to the next doc"
+  },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Collapse sidebar",
+    "message": "サイドバーを隠す",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Collapse sidebar",
+    "message": "サイドバーを隠す",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "message": "これはリリース前の{siteTitle} {versionLabel}のドキュメントです。",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "message": "これは{siteTitle} {versionLabel}のドキュメントで現在はアクティブにメンテナンスされていません。",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "message": "最新のドキュメントは{latestVersionLink} ({versionLabel}) を見てください。",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "latest version",
+    "message": "最新バージョン",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.editThisPage": {
-    "message": "Edit this page",
+    "message": "このページを編集",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Direct link to heading",
+    "message": "見出しへの直接リンク",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": " on {date}",
+    "message": "{date}に",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " by {user}",
+    "message": "{user}が",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Last updated{atDate}{byUser}",
+    "message": "{atDate}{byUser}最終更新",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
@@ -152,41 +155,38 @@
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.common.skipToMainContent": {
-    "message": "Skip to main content",
+    "message": "メインコンテンツまでスキップ",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
     "message": "On this page",
     "description": "The label used by the button on the collapsible TOC component"
   },
-  "Hokusai Logo": {
+  "hokusai.logo.alt": {
     "message": "Hokusai Logo"
   },
-  "homepage.title": {
-    "message": "Fast and Easy for NFT"
+  "hokusai.button.get-started": {
+    "message": "Hokusai API を始める"
   },
-  "Hokusai API を始める": {
-    "message": "Get Started"
+  "hokusai.button.api-document": {
+    "message": "API ドキュメント"
   },
-  "API ドキュメント": {
-    "message": "API Document"
+  "hokusai.section.gas-free.title": {
+    "message": "GAS代が無料"
   },
-  "GAS代が無料": {
-    "message": "No Gas fees, No cryptocurrency"
+  "hokusai.section.gas-free.description": {
+    "message": "Hokusaiが事業者やアーティストの代わりにブロックチェーンのネットワークに手数料を支払うため、 Hokusai APIの利用者は、NFTの発行や送信に必要なGAS代（ネットワーク手数料）を用意する必要がありません。"
   },
-  "Webエンジニアでも開発可能": {
-    "message": "No blockchain engineers"
+  "hokusai.section.no-engineer.title": {
+    "message": "Webエンジニアでも開発可能"
   },
-  "Hokusai チームによる手厚いサポート": {
-    "message": "Flexible Support System"
+  "hokusai.section.no-engineer.description": {
+    "message": "通常、NFT関連のプロダクトを開発する場合はブロックチェーンエンジニアが必要です。 Hokusai API を利用することで、Webエンジニアのみで NFT のプロダクトを開発できます。 決済機能を Stripe を使って組み込むように、NFTを自社サイトに組み込むことが可能です。"
   },
-  "Hokusaiが事業者やアーティストの代わりにブロックチェーンのネットワークに手数料を支払うため、 Hokusai APIの利用者は、NFTの発行や送信に必要なGAS代（ネットワーク手数料）を用意する必要がありません。": {
-    "message": "Since Hokusai pays fees to the blockchain network on behalf of its users, you do not need to prepare GAS fees (network fees) for minting and transferring NFTs."
+  "hokusai.section.support.title": {
+    "message": "Hokusai チームによる手厚いサポート"
   },
-  "通常、NFT関連のプロダクトを開発する場合はブロックチェーンエンジニアが必要です。 Hokusai API を利用することで、Webエンジニアのみで NFT のプロダクトを開発できます。 決済機能を Stripe を使って組み込むように、NFTを自社サイトに組み込むことが可能です。": {
-    "message": "If you want to develop NFT products, you need blockchain engineers. Hokusai API helps you integrate NFT into your own website without blockchain engineer, just as you can integrate payment functions using Stripe."
-  },
-  "Hokusaiチームには、ブロックチェーンエンジニアが複数在籍しています。 プロダクト開発についてお困りの際はお気軽にお問い合わせください。アーキテクチャ、NFTについてお答えします。": {
-    "message": "There are several blockchain engineers on the Hokusai team. If you have any questions about product development, please feel free to contact us."
+  "hokusai.section.support.description": {
+    "message": "Hokusaiチームには、ブロックチェーンエンジニアが複数在籍しています。 プロダクト開発についてお困りの際はお気軽にお問い合わせください。アーキテクチャ、NFTについてお答えします。"
   }
 }

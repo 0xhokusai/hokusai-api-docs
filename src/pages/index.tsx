@@ -6,9 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import Layout from '@theme/Layout';
-
 import clsx from 'clsx';
-
 import styles from './styles.module.css';
 
 function Home() {
@@ -25,7 +23,7 @@ function Home() {
                     <div className={styles.homeInner}>
                         <h1 className={styles.homeProjectTagline}>
                             <img
-                                alt={translate({ message: 'Hokusai Logo' })}
+                                alt={translate({ id: 'hokusai.logo.alt', message: 'Hokusai Logo' })}
                                 className={styles.onlyLogo}
                                 src={useBaseUrl('/img/hokusai-only.png')}
                             />
@@ -34,20 +32,17 @@ function Home() {
                                 dangerouslySetInnerHTML={{
                                     __html: translate({
                                         id: 'homepage.title',
-                                        message:
-                                            'NFTをより速く、簡単に。',
-                                        description:
-                                            '',
+                                        message: 'Fast and Easy for NFT',
                                     }),
                                 }}
                             />
                         </h1>
                         <div className={styles.indexCtas}>
                             <Link className="button button--primary" to="/get-started">
-                                <Translate>Hokusai API を始める</Translate>
+                                <Translate id="hokusai.button.get-started">Get Started</Translate>
                             </Link>
                             <Link className="button button--info" to="/api">
-                                <Translate>API ドキュメント</Translate>
+                                <Translate id="hokusai.button.api-document">API Document</Translate>
                             </Link>
                         </div>
                     </div>
@@ -61,35 +56,31 @@ function Home() {
                         <div className="row">
                             <div className="col">
                                 <h2 className={clsx(styles.featureHeading, "text--center")}>
-                                    <Translate>GAS代が無料</Translate>
+                                    <Translate id="hokusai.section.gas-free.title">No Gas fees, No cryptocurrency</Translate>
                                 </h2>
                                 <p className="padding-horiz--md">
-                                    <Translate>
-                                        Hokusaiが事業者やアーティストの代わりにブロックチェーンのネットワークに手数料を支払うため、
-                                        Hokusai APIの利用者は、NFTの発行や送信に必要なGAS代（ネットワーク手数料）を用意する必要がありません。
+                                    <Translate id="hokusai.section.gas-free.description">
+                                        Since Hokusai pays fees to the blockchain network on behalf of its users, you do not need to prepare GAS fees (network fees) for minting and transferring NFTs.
                                     </Translate>
                                 </p>
                             </div>
                             <div className="col">
                                 <h2 className={clsx(styles.featureHeading, "text--center")}>
-                                    <Translate>Webエンジニアでも開発可能</Translate>
+                                    <Translate id="hokusai.section.no-engineer.title">No blockchain engineers</Translate>
                                 </h2>
                                 <p className="padding-horiz--md">
-                                    <Translate>
-                                        通常、NFT関連のプロダクトを開発する場合はブロックチェーンエンジニアが必要です。
-                                        Hokusai API を利用することで、Webエンジニアのみで NFT のプロダクトを開発できます。
-                                        決済機能を Stripe を使って組み込むように、NFTを自社サイトに組み込むことが可能です。
+                                    <Translate id="hokusai.section.no-engineer.description">
+                                        If you want to develop NFT products, you need blockchain engineers. Hokusai API helps you integrate NFT into your own website without blockchain engineer, just as you can integrate payment functions using Stripe.
                                     </Translate>
                                 </p>
                             </div>
                             <div className="col">
                                 <h2 className={clsx(styles.featureHeading, "text--center")}>
-                                    <Translate>Hokusai チームによる手厚いサポート</Translate>
+                                    <Translate id="hokusai.section.support.title">Flexible Support System</Translate>
                                 </h2>
                                 <p className="padding-horiz--md">
-                                    <Translate>
-                                        Hokusaiチームには、ブロックチェーンエンジニアが複数在籍しています。
-                                        プロダクト開発についてお困りの際はお気軽にお問い合わせください。アーキテクチャ、NFTについてお答えします。
+                                    <Translate id="hokusai.section.support.description">
+                                        There are several blockchain engineers on the Hokusai team. If you have any questions about product development, please feel free to contact us.
                                     </Translate>
                                 </p>
                             </div>
