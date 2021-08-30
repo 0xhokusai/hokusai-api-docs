@@ -1,23 +1,23 @@
 ---
 id: request
-title: リクエスト
+title: Request
 sidebar_position: 2.2
-description: Hokusai API のリクエストについて
+description: Request for Hokusai API
 keywords:
   - Hokusai api
-  - リクエスト
+  - Request
 ---
 
-Hokusai API のリクエストは以下のプロトコルに従います。
-- 全ての API リクエストは HTTPS で送信します。
-- パラメータは、パス、クエリ、または JSON 形式のリクエストボディで送信します。
-- 全ての API リクエストは、クエリパラメータに API Key を値として持つ `key` パラメータが必要となります。詳細は[認証](authentication)で確認してください。
+Requests for Hokusai API follow the protocol below.
+- All API requests should be sent over HTTPS.
+- Parameters should be sent as a path, query, or JSON format request body.
+- All API requests require a `key` parameter with the API Key as the value in the query parameter. See [authentication](authentication) for details.
 
-## リクエストボディ
+## Request Body
 
-特定のエンドポイントは、リクエストボディでパラメータを渡すことができます。リクエストボディは、JSONオブジェクトの形で、キーの名前は[camel case](https://en.wikipedia.org/wiki/Camel_case)で表記します。
-以下にリクエストボディの例を示します。
-```json title="/nfts/{contractId}/mint へのリクエストボディの例"
+Some endpoints should be passed parameters in the request body. The request body is in the form of a JSON object, and the name of the key is denoted by [camel case](https://en.wikipedia.org/wiki/Camel_case).
+An example of a request body is shown below.
+```json title="/nfts/{contractId}/mint"
 {
   "to": "0x640cd26d5bd53a2342bdcc8e9930282c542e0e98",
   "tokenUri": "https://example.com/1"

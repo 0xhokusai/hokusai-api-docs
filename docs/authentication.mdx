@@ -1,27 +1,25 @@
 ---
 id: authentication
-title: 認証
+title: Authentication
 sidebar_position: 2.2
-description: Hokusai API の認証について
+description: Authentication for Hokusai API
 keywords:
   - Hokusai api
-  - 認証
+  - authentication
 ---
 import CodeBlock from '@theme/CodeBlock';
 
-## API Key発行申請を行う
-まずはじめに、[こちら](https://ir9l8pcvcmm.typeform.com/to/FSREILsN?typeform-source=hokusai.app)のフォームからAPI Keyの発行申請を行ってください。  
-API Key発行まで2~3営業日お待ち下さい。
+## Apply for API Key Issuance
 
-## 認証
+First of all, please apply for an API Key using the form [here](https://hokusai.app/pre-register).  
+Please allow 2~3 business days for the API Key to be issued.
 
-Hokusai API では全てのリクエストに対して、有効性を確認するために認証を要求します。
-
-ユーザはリクエストの認証を行うために、URLクエリの `key` パラメータに API Key を指定します。
-以下はリクエストの例です。
-
+## How To Authenticate
+Hokusai API requires all requests to be authenticated to verify validity.
+To authenticate requests, users should specify the API Key in the `key` parameter of the URL query.
+The following is an example of a request.
 ```:bash
 https://api.hokusai.app/v1/nfts/{contractAddress}/mint?key={apiKey}
 ```
 
-このように、全てのエンドポイントには、API Key を値として持つ `key` パラメータの指定が必要となります。
+As you can see, all endpoints need to specify `key` parameter with the API Key.

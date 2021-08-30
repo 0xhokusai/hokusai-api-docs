@@ -1,6 +1,6 @@
 ## Related issue
 
-#xx
+close #xx
 
 ## Changes
 
