@@ -14,20 +14,20 @@ Set NFT royalty.
 |Parameter|Type|Example Value|Description|Required|
 |--|:--:|:--:|--|--|
 |`contractId`|string|`ADXS6zyen4NctAjH`|`contractId` issued by Hokusai API|Required|
-|`tokenId`|string|`1`|`tokenId` issued by Hokusai API when minting NFT|Required|
+|`tokenId`|string|`1`|`tokenId` issued by Hokusai API when minting the NFT|Required|
 
 ### Request Body
 
 |Key|Type|Example Value|Description|
 |--|:--:|:--:|--|
 |`receiver`|string|`0x3a93da588954acf4d0d8f1f1a4439fa79d84cf29`|Royalty recipient's Ethereum address|
-|`percentage`|number|`10`|Royalty rate (0~100%)|
+|`percentage`|number|`10`|Royalty rate (0-100%)|
 
 ### Response
 
 |Key|Type|Example Value|Description|
 |--|:--:|:--:|--|
-|`txHash`|string|`0xc968510337593d167efa433ab3726634cab8754d88f38e6e61e8ac7071601c42`|Hash value of the transaction that issues the NFT|
+|`txHash`|string|`0xc968510337593d167efa433ab3726634cab8754d88f38e6e61e8ac7071601c42`|Hash value of the transaction that issued the NFT|
 
 ### Example Request
 
@@ -107,7 +107,7 @@ def set_royalty(base_url: str, api_key: str, contract_id: str, token_id: str, re
 </TabItem>
 </Tabs>
 
-#### Response
+#### Response example
 
 ```json
 {
