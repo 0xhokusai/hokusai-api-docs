@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem';
 
 ### `POST /v1/nfts/{contractId}/mint`
 
-[Mint](../glosarry#mint) NFT
+[Mint](../glosarry#mint) an NFT
 
 ### Request Parameter
 
@@ -19,7 +19,7 @@ import TabItem from '@theme/TabItem';
 
 |Key|Type|Example Value|Description|
 |--|:--:|:--:|--|
-|`to`|string|`0x3a93da588954acf4d0d8f1f1a4439fa79d84cf29`|Eth Address to mint NFT|
+|`to`|string|`0x3a93da588954acf4d0d8f1f1a4439fa79d84cf29`|ETH Address to mint the NFT|
 |`tokenUri`|string|`https://example.com/1`|URI of metadata|
 
 ### Response
@@ -106,7 +106,7 @@ def mint_nft(base_url: str, api_key: str, contract_id: str, to: str, tokenUri: s
 </TabItem>
 </Tabs>
 
-#### Response
+#### Response example
 
 ```json
 {
