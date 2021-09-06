@@ -8,14 +8,14 @@ keywords:
   - Request
 ---
 
-Requests for Hokusai API follow the protocol below.
+Hokusai API requests follow the protocol below.
 - All API requests should be sent over HTTPS.
-- Parameters should be sent as a path, query, or JSON format request body.
-- All API requests require a `key` parameter with the API Key as the value in the query parameter. See [authentication](authentication) for details.
+- Parameters should be sent in the request body as a path, query, or JSON format.
+- All API requests need a `key` parameter with the API key as the value in the query parameter. See [authentication](authentication) for more details.
 
 ## Request Body
 
-Some endpoints should be passed parameters in the request body. The request body is in the form of a JSON object, and the name of the key is denoted by [camel case](https://en.wikipedia.org/wiki/Camel_case).
+Some endpoints requires passing parameters in the request body. The request body is in a JSON object format, and the name of the key is denoted by [the camel case](https://en.wikipedia.org/wiki/Camel_case).
 An example of a request body is shown below.
 ```json title="/nfts/{contractId}/mint"
 {
