@@ -1,0 +1,174 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Hokusai API
+tags:
+  - name: NFT
+    description: Manage NFTs
+paths:
+  /nfts/{contractId}/{tokenId}:
+    get:
+      tags:
+        - get nft
+      summary: Get information of the NFT.
+      operationId: getNFT
+      parameters:
+        - in: path
+          name: contractId
+          required: true
+          description: Target contract ID.
+          schema:
+            type: string
+        - in: path
+          name: tokenId
+          required: true
+          description: TokenID of the NFT to get.
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NFT"
+        "400":
+          description: Invalid input
+  /nfts/{contractId}/mint:
+    post:
+      tags:
+        - mint
+      summary: Mint a new NFT.
+      operationId: mint
+      parameters:
+        - in: path
+          name: contractId
+          required: true
+          description: Target contract ID.
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MintNFT"
+        description: NFT object to mint.
+        required: true
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiResponse"
+        "400":
+          description: Invalid input
+  /nfts/{contractId}/{tokenId}/royalty:
+    get:
+      tags:
+        - royalty
+      summary: Get royalty of the NFT.
+      operationId: getRoyalty
+      parameters:
+        - in: path
+          name: contractId
+          required: true
+          description: Target contract ID.
+          schema:
+            type: string
+        - in: path
+          name: tokenId
+          description: TokenID to get royalty.
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Royalty"
+        "400":
+          description: Invalid input
+    post:
+      tags:
+        - royalty
+      summary: Set royalty to the NFT.
+      operationId: setRoyalty
+      parameters:
+        - in: path
+          name: contractId
+          required: true
+          description: Target contract ID.
+          schema:
+            type: string
+        - in: path
+          name: tokenId
+          required: true
+          description: Target token ID.
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Royalty"
+        description: NFT royalty to set.
+        required: true
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiResponse"
+        "400":
+          description: Invalid input
+servers:
+  - url: /v1
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "key"
+    in: "query"
+security:
+  - api_key: []
+components:
+  schemas:
+    NFT:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          minimum: 1
+        tokenUri:
+          type: string
+          description: A Metadata URI.
+    MintNFT:
+      type: object
+      properties:
+        to:
+          type: string
+          description: A Ethereum address to mint the NFT to.
+        tokenUri:
+          type: string
+          description: A Metadata URI.
+    Royalty:
+      type: object
+      properties:
+        receiver:
+          type: string
+          description: A Ethereum address of the receiver.
+        parcentage:
+          type: integer
+          format: int32
+          minimum: 0
+          maximum: 100
+    ApiResponse:
+      type: object
+      properties:
+        txHash:
+          type: string
+          description: A transaction hash of the transaction.
